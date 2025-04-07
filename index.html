@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChromaNova</title>    
+    <link rel="icon" type="image" sizes="32x32" href="image.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .header-bg {
+        background: linear-gradient(135deg, #4361ee 0%, #80ed99 100%);
+        background-size: 250% 250%;
+        animation: moveGradient 4s linear infinite;
+      }
+      @keyframes moveGradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
+      .cta-button {
+        background-color: #ffb703;
+        color: #0c305e;
+        padding: 14px 28px;
+        border-radius: 32px;
+        font-size: 18px;
+        font-weight: 700;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .cta-button:hover {
+        background-color: #f29f05;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+    }
+    .text {
+    text-align: center;
+    margin-top: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000;
+
+}
+
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="header-bg text-white py-8 md:py-10">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-semibold">ChromaNova</h1>
+            <p class="mt-4 text-lg md:text-xl">Discover the amazing possibilities our app brings to you.</p>
+            <div class="mt-8">
+                <img src="image.png" alt="App Image" class="rounded-lg mx-auto" style="max-width: 30%; height: auto;">
+            </div>
+            <a href="https://drive.google.com/drive/folders/1z_F57Ts5sea2vIggwo1w5SdmIz6hyNz8?usp=sharing" download class="cta-button mt-10">
+                Download App
+            </a>
+        </div>
+        <p class="text" style="text-align: center;">Download folder and just run <strong>"ChromaNova Setup 1.0.0"</strong> file</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 md:py-16">
+        <section class="text-center">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8 md:mb-10">About Us</h2>
+            <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto">
+                Our application is a great tool that simplifies working with colors! It is ideal for anyone who needs to quickly and easily find, generate, and save colors.
+            </p>
+            <div class="mt-12 flex justify-center">
+                <img src="image3.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
+            </div>
+        </section>
+
+        <section class="mt-16 md:mt-20">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8 md:mb-10">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
+                    <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Color Selection</h3>
+                    <p class="text-gray-700 text-lg md:text-xl">You can choose any color you want!</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
+                    <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Windows Taskbar Access</h3>
+                    <p class="text-gray-700 text-lg md:text-xl">The app is conveniently accessible from your Windows taskbar.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
+                    <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Color Management</h3>
+                    <p class="text-gray-700 text-lg md:text-xl">The app allows you to copy, generate, and save colors and color palettes.</p>
+                </div>
+                 <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
+                    <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Efficiency</h3>
+                    <p class="text-gray-700 text-lg md:text-xl">Our application streamlines the process of generating, finding, and saving colors directly from your Windows taskbar, eliminating the need to open a web browser.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="mt-16 md:mt-20 text-center">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8 md:mb-10">Start using the application today!</h2>
+            <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto mb-8 md:mb-10">
+                Don't wait and try our application. It's a simple, fast and efficient solution for your needs.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1z_F57Ts5sea2vIggwo1w5SdmIz6hyNz8?usp=sharing" download class="cta-button mt-10">
+                Download App
+            </a>
+            <p class="text" style="text-align: center;">Download folder and just run <strong>"ChromaNova Setup 1.0.0"</strong> file</p>
+
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-gray-600 py-6 md:py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            © 2025 All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+
+    </script>
+</body>
+</html>
