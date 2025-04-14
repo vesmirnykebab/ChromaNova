@@ -3,50 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChromaNova</title>    
-    <link rel="icon" type="image" sizes="32x32" href="image.png">
+    <title>ChromaNova</title>
+    <link rel="icon" type="image" sizes="32x32" href="/images/image.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <style>
-      .header-bg {
-        background: linear-gradient(135deg, #4361ee 0%, #80ed99 100%);
-        background-size: 250% 250%;
-        animation: moveGradient 4s linear infinite;
-      }
-      @keyframes moveGradient {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-      }
-      .cta-button {
-        background-color: #ffb703;
-        color: #0c305e;
-        padding: 14px 28px;
-        border-radius: 32px;
-        font-size: 18px;
-        font-weight: 700;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-        border: none;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 20px;
-    }
-    .cta-button:hover {
-        background-color: #f29f05;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        transform: translateY(-2px);
-    }
-    .text {
-    text-align: center;
-    margin-top: 4px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #000;
+        .header-bg {
+            background: linear-gradient(135deg, #4361ee 0%, #80ed99 100%);
+            background-size: 250% 250%;
+            animation: moveGradient 4s linear infinite;
+        }
+        @keyframes moveGradient {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        .cta-button {
+            background-color: #ffb703;
+            color: #0c305e;
+            padding: 14px 28px;
+            border-radius: 32px;
+            font-size: 18px;
+            font-weight: 700;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #f29f05;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        .text {
+            text-align: center;
+            margin-top: 4px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #000;
+        }
 
-}
+        .contact-us-heading {
+            padding-top: 60px; /* Pridaný padding pre nadpis Contact Us */
+        }
 
     </style>
 </head>
@@ -56,7 +59,7 @@
             <h1 class="text-4xl md:text-5xl font-semibold">ChromaNova</h1>
             <p class="mt-4 text-lg md:text-xl">Discover the amazing possibilities our app brings to you.</p>
             <div class="mt-8">
-                <img src="image.png" alt="App Image" class="rounded-lg mx-auto" style="max-width: 30%; height: auto;">
+                <img src="/images/image.png" alt="App Image" class="rounded-lg mx-auto" style="max-width: 30%; height: auto;">
             </div>
             <a href="https://drive.google.com/drive/folders/1z_F57Ts5sea2vIggwo1w5SdmIz6hyNz8?usp=sharing" download class="cta-button mt-10">
                 Download App
@@ -72,8 +75,22 @@
                 Our application is a great tool that simplifies working with colors! It is ideal for anyone who needs to quickly and easily find, generate, and save colors.
             </p>
             <div class="mt-12 flex justify-center">
-                <img src="image3.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
+                <img src="/images/image3.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
             </div>
+            <div class="mt-12 flex justify-center">
+                <img src="/images/image2.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
+            </div>
+            <div class="mt-12 flex justify-center">
+                <img src="/images/image4.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
+            </div>
+            <div class="mt-12 flex justify-center">
+                <img src="/images/image5.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
+            </div>
+        </section>
+        <section class="text-center">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8 md:mb-10 contact-us-heading">Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to contact us by email by clicking the button below</p>
+            <button class="cta-button mt-10" onclick="window.location.href='mailto:mkurcik002@gmail.com';">Contact our developer</button>
         </section>
 
         <section class="mt-16 md:mt-20">
@@ -91,7 +108,7 @@
                     <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Color Management</h3>
                     <p class="text-gray-700 text-lg md:text-xl">The app allows you to copy, generate, and save colors and color palettes.</p>
                 </div>
-                 <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
+                <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
                     <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Efficiency</h3>
                     <p class="text-gray-700 text-lg md:text-xl">Our application streamlines the process of generating, finding, and saving colors directly from your Windows taskbar, eliminating the need to open a web browser.</p>
                 </div>
