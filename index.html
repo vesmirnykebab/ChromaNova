@@ -20,8 +20,8 @@
             100%{background-position:0% 50%}
         }
         .cta-button {
-            background-color: #ffb703;
-            color: #0c305e;
+            background-color: #ad340b;
+            color: #ffffff;
             padding: 14px 28px;
             border-radius: 32px;
             font-size: 18px;
@@ -51,68 +51,134 @@
             padding-top: 60px; 
         }
 
+        .notebook-wrapper {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto 40px auto;
+}
+
+.notebook-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+/* Slider vo vnútri notebooku */
+.image-slider-inside {
+  position: absolute;
+  top: -1.50%;    /* uprav podľa potreby */
+  left: 0%;   /* uprav podľa potreby */
+  width: 100%;  /* uprav podľa potreby */
+  height: 100%; /* uprav podľa potreby */
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+.image-slider-inside img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* alebo 'cover' podľa potreby */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.image-slider-inside img.active {
+  display: block;
+}
+.centered-image {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: 40%;
+  margin-top: 10%;
+}
+
+
+
     </style>
 </head>
 <body class="bg-gray-100">
     <header class="header-bg text-white py-8 md:py-10">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl font-semibold">ChromaNova</h1>
-            <p class="mt-4 text-lg md:text-xl">Discover the amazing possibilities our app brings to you.</p>
+            <p class="mt-4 text-lg md:text-xl">
+                Discover the amazing possibilities our app brings to you.<br>
+                Our application is a great tool that simplifies working with colors!<br>
+                It is ideal for anyone who needs to quickly and easily find, generate, and save colors.
+              </p>
+              
             <div class="mt-8">
                 <img src="image.png" alt="App Image" class="rounded-lg mx-auto" style="max-width: 30%; height: auto;">
             </div>
             <a href="https://drive.google.com/drive/folders/1z_F57Ts5sea2vIggwo1w5SdmIz6hyNz8?usp=sharing" download class="cta-button mt-10" target="_blank">
+                <img src="imageswin.png" alt="Windows Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
                 Download App
             </a>
         </div>
-        <p class="text" style="text-align: center;">Download folder and just run <strong>"ChromaNova Setup 1.0.0"</strong> file</p>
+        <p class="text" style="text-align: center;">Download folder and just run <strong>"ChromaNova Setup 1.1.0"</strong> file</p>
     </header>
 
-    <main class="container mx-auto px-4 py-12 md:py-16">
-        <section class="text-center">
-            <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8 md:mb-10">About Us</h2>
-            <p class="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto">
-                Our application is a great tool that simplifies working with colors! It is ideal for anyone who needs to quickly and easily find, generate, and save colors.
-            </p>
-            <div class="mt-12 flex justify-center">
-                <img src="image3.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
-            </div>
-            <div class="mt-12 flex justify-center">
-                <img src="image2.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
-            </div>
-            <div class="mt-12 flex justify-center">
-                <img src="image4.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
-            </div>
-            <div class="mt-12 flex justify-center">
-                <img src="image5.png" alt="App Screenshot" class="rounded-lg shadow-lg" style="max-width: 50%; height: auto; border-radius: 10px;">
-            </div>
-        </section>
-        <section class="text-center">
-            <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8 md:mb-10 contact-us-heading">Contact Us</h2>
-            <p>If you have any questions or need assistance, feel free to contact us by email by clicking the button below</p>
-            <button class="cta-button mt-10" onclick="window.location.href='mailto:mkurcik002@gmail.com';">Contact our developer</button>
-        </section>
+    <div class="notebook-wrapper">
+        <img src="notebook.jpg" alt="notebook" class="notebook-image">
+        <div class="image-slider-inside">
+            <img src="obraz.png" alt="Ukážka 1" class="active">
+            <img src="obraz2 (1).png" alt="Ukážka 2">
+            <img src="obraz3.png" alt="Ukážka 3">
+            <img src="obraz.png" alt="Ukážka 4">
+        </div>
+    </div>
 
+    <main class="container mx-auto px-4 py-12 md:py-16">
+        
+        
         <section class="mt-16 md:mt-20">
             <h2 class="text-5xl md:text-6xl font-bold text-gray-800 text-center mb-8 md:mb-10">Key Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
                     <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Color Selection</h3>
+                    <img src="color-wheel.png" alt="Paleta farieb" class="w-6 h-6 mr-2" />
                     <p class="text-gray-700 text-lg md:text-xl">You can choose any color you want!</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
                     <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Windows Taskbar Access</h3>
+                    <img src="cogwheel.png" alt="Paleta farieb" class="w-6 h-6 mr-2" />
                     <p class="text-gray-700 text-lg md:text-xl">The app is conveniently accessible from your Windows taskbar.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
                     <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Color Management</h3>
+                    <img src="color-palette.png" alt="Paleta farieb" class="w-6 h-6 mr-2" />
                     <p class="text-gray-700 text-lg md:text-xl">The app allows you to copy, generate, and save colors and color palettes.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
                     <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Efficiency</h3>
+                    <img src="lightning.png" alt="Paleta farieb" class="w-6 h-6 mr-2" />
                     <p class="text-gray-700 text-lg md:text-xl">Our application streamlines the process of generating, finding, and saving colors directly from your Windows taskbar, eliminating the need to open a web browser.</p>
                 </div>
+                <div class="bg-white rounded-lg shadow-md p-8 md:p-10 flex flex-col justify-between">
+                    <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Color Saving Feature</h3>
+                    <img src="diskette.png" alt="Paleta farieb" class="w-6 h-6 mr-2" />
+                    <p class="text-gray-700 text-lg md:text-xl">
+                      Easily save your favorite colors and palettes for quick access and future use.
+                    </p>
+                  </div>
+                  
             </div>
+        </section>
+        <section class="text-center">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8 md:mb-10 contact-us-heading">Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to contact us by email by clicking the button below</p>
+            <button class="cta-button mt-10" onclick="window.location.href='mailto:mkurcik002@gmail.com';">Leave Feedback</button>
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-800 mb-8 md:mb-10 contact-us-heading">Feedbacks</h2>
+            <img src="review.png" alt="Paleta farieb" class="centered-image" />
+
+              
+
         </section>
 
         <section id="download" class="mt-16 md:mt-20 text-center">
@@ -121,10 +187,19 @@
                 Don't wait and try our application. It's a simple, fast and efficient solution for your needs.
             </p>
             <a href="https://drive.google.com/drive/folders/1z_F57Ts5sea2vIggwo1w5SdmIz6hyNz8?usp=sharing" download class="cta-button mt-10" target="_blank">
+                <img src="imageswin.png" alt="Windows Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
                 Download App
             </a>
-            <p class="text" style="text-align: center;">Download folder and just run <strong>"ChromaNova Setup 1.0.0"</strong> file</p>
-
+            
+            <p class="text" style="text-align: center;">Download folder and just run <strong>"ChromaNova Setup 1.1.0"</strong> file</p>
+            
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <a href="https://www.producthunt.com/products/chromanova/reviews?utm_source=badge-product_review&utm_medium=badge&utm_souce=badge-chromanova" target="_blank">
+                  <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1055547&theme=light" alt="ChromaNova - Instant taskbar color picker: pick, generate, save hues. | Product Hunt" width="250" height="54" />
+                </a>
+              </div>
+              
+              
         </section>
     </main>
 
@@ -135,7 +210,14 @@
     </footer>
 
     <script>
+        const images = document.querySelectorAll(".image-slider-inside img");
+    let current = 0;
 
+    setInterval(() => {
+        images[current].classList.remove("active");
+        current = (current + 1) % images.length;
+        images[current].classList.add("active");
+    }, 3000); // Každé 3 sekundy
     </script>
 </body>
 </html>
